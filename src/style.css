@@ -17,7 +17,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.nav-bar,
+.navbar,
 .manager-details {
     display: flex;
     justify-content: space-between;
@@ -57,15 +57,15 @@ body {
     font-size: 20px;
     font-weight: 800;
     letter-spacing: -1px;
-    color: #212121;
-    background-color: #DFE5EF;
+    color: #161515;
+    background-color: white;
     padding: 10px 30px;
 }
 
-.title-container {
+.titlebox {
     display: flex;
     justify-content: space-between;
-    background: #DFE5EF;
+    background: white;
     border-top: 1px solid grey;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .subtitle.filtertype-active {
     border-radius: 15.5px;
-    background-color: #212121;
+    background-color: #211f1f;
     color: white;
     fill: white;
 }
@@ -89,7 +89,7 @@ body {
     display: none;
 }
 
-.filter-container {
+.filterbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +107,7 @@ body {
     /* margin: 5px; */
 }
 
-.title-container .subtitle {
+.titlebox .subtitle {
     margin: 5px;
 }
 
@@ -121,17 +121,17 @@ body {
 
 .insidetext {
     font-size: 20px;
-    color: #212121;
+    color: #151414;
     padding: 0px 30px;
 }
 
-.grid-container {
+.gridbox {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
 }
 
-.grid-container div {
+.gridbox div {
     padding: 30px 0;
 }
 
@@ -141,7 +141,7 @@ body {
     object-fit: contain;
 }
 
-.formation-container {
+.formationbox {
     position: relative;
     display: flex;
     justify-content: center;
@@ -156,7 +156,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.player-container {
+.playerbox {
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -192,14 +192,14 @@ body {
     display: flex;
     width: 90%;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: white;
     margin: 40px auto 0 auto;
 
 }
 
 .smalltext {
     font-size: 14px;
-    color: #212121;
+    color: #1b1a1a;
 }
 
 .player-photo {
@@ -208,19 +208,30 @@ body {
     margin: 20px;
 }
 
-.major-details,
-.minor-details {
+.major-details{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 .minor-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex: 1;
 }
 
+
+.second-half{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+}
 .half,
-.second-half,
 .minor-second-half {
     display: flex;
     justify-content: center;
@@ -228,10 +239,8 @@ body {
     flex: 1;
     padding-left: 50px;
 }
-
-.second-half,
 .minor-second-half {
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -246,7 +255,7 @@ body {
     font-size: 16px;
     font-weight: 800;
     letter-spacing: -0.8px;
-    color: #212121;
+    color: #060505;
     text-align: center;
     display: flex;
     align-items: center;
@@ -255,14 +264,14 @@ body {
 .minor-text {
 
     font-size: 14px;
-    color: #212121;
+    color: #0d0c0c;
 }
 
 .half span {
 
     font-size: 20px;
     font-weight: 800;
-    color: #212121;
+    color: #1b1a1a;
 }
 
 .inputText {
@@ -279,21 +288,24 @@ body {
     text-align: center;
     line-height: 1.5em;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
-    background-color: #ffffff;
+    background-color: white;
     position: absolute;
     border-radius: 5px;
+    display: block;
 }
 
-.dropdown:hover .dropdown-list {
+.dropdown:hover {
     display: block;
 }
 
 .dropdown-list p:hover {
-    background-color: lightgrey;
+    background-color: rgb(218, 210, 210);
     cursor: pointer;
 }
 
-.award-selected,
+.award-selected{
+    display: none;
+}
 .team-selected {
     display: none;
 }
@@ -302,7 +314,7 @@ body {
     font-size: 16px;
     font-weight: 800;
     letter-spacing: -0.8px;
-    color: #212121;
+    color: #0a0909;
     background: black;
     color: white;
     border-radius: 10%;

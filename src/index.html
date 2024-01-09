@@ -11,17 +11,15 @@
     <title>Kalvium Premier League</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
-
 <body>
-
-    <nav class="nav-bar">
+    <nav class="navbar">
         <h1 style="color:red ;">KPL</h1>
         <img src="assets/dreamteam.svg" class="DREAMTEAM">
     </nav>
     <section class="manager-details">
         <div class="Rectangle">
             <p class="title">MANAGER'S PROFILE </p>
-            <div class="grid-container">
+            <div class="gridboxplayerbox">
                 <div>
                     <p class="subtitle">NAME</p>
                     <p class="insidetext">MANAGER NAME</p>
@@ -42,29 +40,28 @@
         </div>
         <div class="Rectangle">
             <p class="title">FORMATION</p>
-            <div class="formation-container">
+            <div class="formationboxplayerbox">
                 <img src="assets/group-5.svg" class="playground">
                 <img src="./assets/goalkeeper.svg" alt="player" class="goalkeeper">
-                <div class="player-container defence">
+                <div class="playerbox defence">
                 </div>
-                <div class="player-container midfield">
+                <div class="playerbox midfield">
                 </div>
-                <div class="player-container forward">
+                <div class="playerbox forward">
                 </div>
             </div>
         </div>
     </section>
-
     <section class="Rectangle squad">
-        <div class="title-container" id="type-of-filter">
+        <div class="titlebox" id="type-of-filter">
             <p class="title">SQUAD</p>
-            <div class="filter-container">
+            <div class="filterboxplayerbox">
                 <p class="subtitle"><i class="fas fa-filter"></i><span> APPLY
                         FILTERS</span>
                 </p>
             </div>
         </div>
-        <div class="title-container" id="filter-type">
+        <div class="titlebox" id="filter-type">
             <div class="dropdown">
                 <p class="subtitle non-bold">Debut Year <span id="debutflag"></span> <img src="./assets/down-arrow.svg"
                         alt="down">
@@ -72,7 +69,6 @@
                     </div>
                 </p>
             </div>
-
             <div class="dropdown">
                 <p class="subtitle non-bold">Position <span id="positionflag"></span> <img src="./assets/down-arrow.svg"
                         alt="down">
@@ -80,7 +76,6 @@
                     </div>
                 </p>
             </div>
-
             <div class="dropdown">
                 <p class="subtitle non-bold">Team <span id="teamflag"></span><img src="./assets/down-arrow.svg"
                         alt="down"></p>
@@ -103,19 +98,15 @@
                     </div>
                 </p>
             </div>
-
             <div class="dropdown">
                 <p class="subtitle non-bold award-selected">Country <img src="./assets/down-arrow.svg" alt="down"></p>
                 <div class="dropdown-list" id="dropdown-country">
                 </div>
             </div>
-
             <p class="subtitle non-bold award-selected">No. of Awards <input type="text" class="inputText"
                     id="awardCount"></p>
-
         </div>
-        <div id="player-container">
-
+        <div id="playercontainer">
         </div>
     </section>
     <script type="text/javascript" src="link.js"></script>
